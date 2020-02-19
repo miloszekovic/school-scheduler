@@ -1,0 +1,11 @@
+.SpacingGroup > *:not(:last-child) {
+  margin-right: 0.2rem;
+}
+.SpacingGroup > * {
+  margin-bottom: 0.2rem;
+}
+@media screen and (min-width: 1200px) {
+  .SpacingGroup {
+    white-space: nowrap;
+  }
+}

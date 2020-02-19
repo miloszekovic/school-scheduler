@@ -1,0 +1,64 @@
+.DataTable {
+  width: initial;
+  border: none;
+  position: relative;
+  z-index: 0;
+  min-width: 100%;
+}
+.DataTable thead,
+.DataTable tbody,
+.DataTable tr,
+.DataTable th,
+.DataTable td {
+  position: relative !important;
+}
+
+.DataTable th {
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  color: #666;
+  cursor: default;
+}
+
+.DataTable th a {
+  color: #333;
+}
+
+.DataTable-no-data {
+  font-size: 30px;
+  padding: 50px !important;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* Mobile */
+.DataTable-td-mobile-label {
+  display: none;
+  background: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.5);
+  text-align: right;
+}
+
+@media screen and (max-width: 767.98px) {
+  .DataTable > thead {
+    display: none;
+  }
+  .DataTable > tbody > tr {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    border: 1px solid #c2c5c9;
+  }
+  .DataTable > tbody > tr + tr {
+    margin-top: -1px;
+  }
+  .DataTable > tbody > tr > td {
+    display: block;
+  }
+  .DataTable-td-mobile-label {
+    display: block;
+  }
+  .DataTable > tbody > tr > td:not(.DataTable-td-mobile-label) {
+    word-break: break-all;
+  }
+}

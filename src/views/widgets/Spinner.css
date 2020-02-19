@@ -1,0 +1,13 @@
+.Spinner-inline {
+  display: inline-block;
+}
+
+.Spinner-page {
+  display: block;
+  margin: 10rem;
+  text-align: center;
+}
+.Spinner-page > .spinner-border {
+  width: 5rem;
+  height: 5rem;
+}

@@ -1,0 +1,42 @@
+.Select__menu {
+  width: auto !important;
+  min-width: 100%;
+}
+.Select__control {
+  display: block;
+  width: 100%;
+  height: calc(2.15625rem + 2px);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.Select__control--is-focused {
+  color: #7b8a8b;
+  background-color: #fff;
+  border-color: #848fca !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(44, 62, 80, 0.25) !important;
+}
+.Select__option--is-focused {
+  background-color: #e6e6e6 !important;
+}
+.Select__option--is-selected {
+  background-color: var(--primary) !important;
+  color: white;
+}
+.Select__option--is-focused.Select__option--is-selected {
+  background-color: #2b3565 !important;
+}
+.Select__clear-indicator {
+  cursor: pointer;
+}
+.Select__multi-value__remove:hover {
+  background-color: var(--danger) !important;
+  color: white !important;
+  cursor: pointer;
+}

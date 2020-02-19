@@ -1,0 +1,103 @@
+.ImageUploader {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.ImageUploader-dropzone {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.ImageUploader-dropzone > input {
+  display: none;
+}
+
+.ImageUploader-bar {
+  background: #eee;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ImageUploader-bar-hint {
+  color: var(--gray);
+  font-style: italic;
+}
+.ImageUploader-bar-hint .badge {
+  vertical-align: middle;
+}
+
+.ImageUploader-content {
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-height: 0;
+}
+
+.ImageUploader-drop-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.ImageUploader-drop-overlay .Icon {
+  font-size: 10vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -5vmin;
+  margin-top: -5vmin;
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.ImageUploader-dropzone-active .ImageUploader-drop-overlay {
+  display: block;
+}
+
+.ImageUploader-spinner-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ImageUploader-spinner-overlay .Spinner {
+  opacity: 0.5;
+}
+
+.ImageUploader-error-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+}
+.ImageUploader-error-overlay > .alert {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+}

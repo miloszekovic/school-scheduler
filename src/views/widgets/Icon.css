@@ -1,0 +1,9 @@
+.Icon {
+  display: inline-block;
+}
+* + .Icon {
+  margin-left: 0.3rem;
+}
+.Icon + * {
+  margin-left: 0.3rem;
+}

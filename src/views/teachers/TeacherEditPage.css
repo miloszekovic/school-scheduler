@@ -1,0 +1,10 @@
+.TeacherEditPage .ImageUploader {
+  min-height: 300px;
+}
+.TeacherEditPage-avatar {
+  max-width: calc(100% - 1rem);
+  max-height: calc(100% - 1rem);
+  display: block;
+  margin: 0.5rem auto auto;
+  border-radius: 100%;
+}

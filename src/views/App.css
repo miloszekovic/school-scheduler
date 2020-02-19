@@ -1,0 +1,47 @@
+a {
+  color: #17a2b8;
+}
+a:hover {
+  text-decoration: none;
+  color: #dc3545;
+}
+
+.navbar {
+  padding: 0.5rem 1rem 0.8rem;
+}
+
+.breadcrumb {
+  background-color: #d5f6fb;
+  border-radius: 0;
+}
+
+.DataTable {
+  border: 2px solid #ccc;
+  margin-bottom: -3px;
+}
+.DataTable td,
+.DataTable th {
+  vertical-align: middle;
+}
+.DataTable tr:nth-child(even) {
+  background: #f4f4f4;
+}
+.DataTable tr:nth-child(odd) {
+  background: white;
+}
+.DataTable th {
+  padding: 10px;
+
+  background: #888;
+  color: white;
+}
+.DataTable tr:hover td {
+    background: #d5f6fb;
+}
+
+.ButtonContainer {
+  display: flex;
+  justify-content: center;
+
+  margin: 50px 0 40px;
+}
